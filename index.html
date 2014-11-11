@@ -4,6 +4,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
  <title>Dark Night</title>
 <style>
+#video_background {
+position: absolute;
+bottom: 0px;
+right: 0px;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+background-color: black;
+}
+
+            @media screen and (min-width: 361px) and (max-width:1000px){
+               
+               #bat{ min-width: 0%;
+                max-width: 80%;}
+                
+
+
+                }
+            
+            @media screen and (min-width: 1000px){ 
+              #bat{ 
+                max-width: 100%;}
+              
+            } 
 
 .opacity{
  width:auto;
@@ -12,11 +37,12 @@
  min-height: 100%;
  left: 0px;
  top: 0px;
+ opacity: 0.2;
 
 
  
  position: absolute;
- background:black;
+
 }
 #title{
  color:white;
@@ -29,7 +55,7 @@
 
 #title2{
 	position: absolute;
- left:37%;
+ left:36%;
  top:60%;
  bottom:0;
  right:0;
@@ -37,18 +63,19 @@
  max-width: 100%;
  width:auto;
  height: auto;
+ font-size: 7vw;
 
 }
        
 #bat{
  position: absolute;
- left:31%;
+ left:28%;
  top:30%;
  bottom:0;
  right:0;
  min-width: 0%;
  max-width: 100%;
- width: auto;
+ width: 55%;
  height: auto;
 
 
@@ -63,22 +90,32 @@
 .footer{
  position: absolute;
  color:white;
- font-size: 25px;
+ font-size: 2vw;
  font-family: Bebas Neue;
- left:21.5%;
+ left:15%;
  top:90%;
+
+
 }
 .foot{
- padding-right: 60px;
+ padding-right: 20px;
 }
 .foo{
  padding-right: 20px;
+ width:5%;
+ height: auto;
+
 }
 
 }
 </style>
 </head>
 <body>
+<body>
+  <video id="video_background" preload="auto" autoplay="autoplay" loop="loop" muted="muted" > 
+  <source src="thedarkknight.mp4" type="video/webm"> 
+  </video>
+
 
  	<div class="opacity">
  	</div>
@@ -93,11 +130,11 @@
  	
  	<div class="footer">
  	<p>
-	<span><img class="foo" src="dark_knight_logo_by_gamnamno-d6myhnn.png" width="65" height="25" alt="bat"></span>
+	<span><img class="foo" src="dark_knight_logo_by_gamnamno-d6myhnn.png" alt="bat"></span>
 
- 	<span class="foot">Kang Ye Lim</span><span class="foo">The Dark Knight</span><span class="foo">2008.08.06</span><span class="foot">Christopher Johnathan James Nolan</span><span class="foo" >Bae Sung Woo</span>
+ 	<span class="foot">Kang Ye Lim</span><span class="foot">The Dark Knight</span><span class="foot">2008.08.06</span><span class="foot">Christopher Johnathan James Nolan</span><span class="foot" >Bae Sung Woo</span>
 	
-	<span><img src="dark_knight_logo_by_gamnamno-d6myhnn.png" width="65" height="25" alt="bat"></span>
+	<span><img class="foo" src="dark_knight_logo_by_gamnamno-d6myhnn.png" alt="bat"></span>
  	</p>
  	</div>
 
