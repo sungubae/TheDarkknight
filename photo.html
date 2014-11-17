@@ -1,52 +1,92 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
- <meta charset="utf-8">
- <title>photo</title>
-<style>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>photo</title>
+		<style type="text/css">
+			*{margin:0; padding:0;
+			   font-family: 'Bebas Neue';
+      			background-color: black;
+      			color:white;
+      			background: black url(bb.png) repeat;}
+			li{list-style:none;}
+			ul{margin:auto; width:1500px; height:60px;}
+			ul>li{float:right; margin:0 3px;}
+			div{	
+					position:relative;  
+					margin-top:200px; 
+					width:900px; height:880px; 
+					border:1px solid #000000;
+					margin-left: 200px;
+			}
+			#title{
+				margin-left: 200px;
+				margin-top:100px; 
+				font-size: 6vw;
+			}
+			#photo{
+				margin-right: 100px;
+				float: right;
+				width: 700px;
+			}
+			#pho{width: 300px;
+			    height: 300px;}
+			div>p{position:absolute; right:0; top:0;}
+		</style>
+		
+	</head>
+	<body>
+		<h1 id="title" >Photo</h1>
+		<ul id="photo">
+			<li><img src="imgs/01.jpg" alt="썸네일1" id="pho" /></li>
+			<li><img src="imgs/02.jpg" alt="썸네일2"  id="pho"/></li>
+			<li><img src="imgs/03.jpg" alt="썸네일3"  id="pho"/></li>
+			<li><img src="imgs/04.jpg" alt="썸네일4"  id="pho"/></li>
+			<li><img src="imgs/05.jpg" alt="썸네일5"  id="pho"/></li>
+			<li><img src="imgs/06.jpg" alt="썸네일6"  id="pho"/></li>
+			<li><img src="imgs/07.jpg" alt="썸네일7"  id="pho"/></li>
+			<li><img src="imgs/08.jpg" alt="썸네일8"  id="pho"/></li>
+		</ul>
+	<div id="picBox">
+      <p id="btnClose"><img src="imgs/close.gif" alt="닫기" /></p>
+    </div>
     
-    body{
-      font-family: 'Bebas Neue';
-      font-size: 70px;
-      background-color: black;
-      color:white;
-      padding:0;
-      margin: 0;
-      background: black url(bb.png) repeat;
-        }
-
-      .all{
-        top:0px;
-        left: 0px;
-        padding:30px;
-        opacity: 0.9;
-        background-color: black;
-
-        }
-    img{
-   max-width: 100%;
-   height:auto
+    
+    <script type="text/javascript">
       
-    }    
+      var list = document.getElementsByTagName("li");
+      var pic = document.getElementById("picBox");
+      var btnC = document.getElementById("btnClose");
+      btnC.onclick=closing;
+      
+      function closing(){
+        pic.style.display = "none";
+      }
+      
+     
+     
+      for(var i=0; i<list.length; i++){
+   
+        list[i].onclick= outer(i);
+        
+      }
+      function outer(num){
+            
+        function showPic(){
 
+          pic.style.display="block";
+          pic.style.backgroundImage="url(imgs/0"+(num+1)+"_B.jpg)";
+    
+        }
+        
+        return showPic;
+     }
+      
+      
 
-
-</style>
-</head>
-<body>
-   <div class="all">
-   <p>PHOTO</p>
-   <img src="1.jpg" alt="1">
-   <img src="2.jpg" alt="1">
-   <img src="3.jpg" alt="1">
-   <img src="4.jpg" alt="1">
-   <img src="5.jpg" alt="1">
-   <img src="6.jpg" alt="1">
-   <img src="7.jpg" alt="1">
-   <img src="8.jpg" alt="1">
-   <img src="9.jpg" alt="1">
-   <img src="10.jpg" alt="1">
- </div>
-
-</body>
+      
+    </script>
+    
+  </body>
 </html>
