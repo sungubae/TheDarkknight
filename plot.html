@@ -3,6 +3,28 @@
 <head>
  <meta charset="utf-8">
  <title>plot</title>
+       <script type="text/javascript">
+
+         function change()
+        {
+             var d = new Date() ;
+            
+             var h = d.getSeconds();
+             
+             
+            
+              if (h%2==0) {
+                document.body.style.backgroundColor="#f83c3c";
+              }
+              else {
+                document.body.style.backgroundColor="#ae13ff";
+              }
+            setTimeout("change()", 3);
+        }
+       window.onload=function(){
+           change();
+       }
+      </script>
 <style>
 
 body{

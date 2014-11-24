@@ -1,34 +1,220 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-	<title>character</title>
+  <title>character</title>
 </head>
 
 <style>
-	body{
-		padding: 0%;
-		margin: 0%;
-		background-color: black;
-	}
-	
-	         @media screen and (min-width:641px){
-            img{
-				 width: 30%;
-			}}
-         @media screen and (min-width:361px) and (max-width:640px){
-           img{
-				 width: 300px;
-			}
-            }
-            @media screen and (max-width: 360px){
+  body{
+   background-color: black;
+    }
+  img{
+    float: left;
+  }
+  .type{
+    font-size: 5.5vw;
+    font-family: Bebas Neue;
+    color:white;
+    top:-20%;
 
+  }
+  .typee{
+    font-size: 3vw;
+    font-family: Bebas Neue;
+    color:#72151f;
+    text-align: right;
+    
+  }
+    .typeee{
+    font-size: 1.5vw;
+    font-family: -흔적L;
+    color:#72151f;
+    text-align: right;
+    
+  }
+
+  .box{
+    float: left;
+  }
+  
+ 
+  
+
+           @media screen and (min-width:641px){
+            img{
+         width: 33.3%;
+      }
+               #jo_p{
+        position: absolute;
+        width: 33.3%;
+        top:-5%;
+        left:2%;
+              }
+              #ba_p{
+        position: absolute;
+        left: 33.3%;
+        top:-5%;
+        width: 33.3%;
+              }
+              #ha_p{
+        position: absolute;
+        left: 66.6%;
+        top:-5%;
+        width: 33.3%;
+              }
+
+                     #jo_pp{
+        position: absolute;
+        width: 33.3%;
+        top:55%;
+        left:-5%;
+              }
+              #ba_pp{
+        position: absolute;
+        left: 30%;
+        top:40%;
+        width: 33%;
+              }
+              #ha_pp{
+        position: absolute;
+        left: 65%;
+        top:40%;
+        width: 33%;
+              }
+
+              #jo_ppp{
+        position: absolute;
+        width: 33.3%;
+        top:70%;
+        left:-5%;
+              }
+              #ba_ppp{
+        position: absolute;
+        left: 35%;
+        top:70%;
+        width: 28%;
+              }
+              #ha_ppp{
+        position: absolute;
+        left: 65%;
+        top:70%;
+        width: 33%;
+              }
+
+    }
+       
+
+         @media screen and (min-width:301px) and (max-width:640px){
+           img{
+         width: 300px;
+      }
+               #jo_p{
+        position: absolute;
+        width: 300px;
+              }
+              #ba_p{
+        position: absolute;
+        left: 33.3%;
+        width: 300px;
+              }
+              #ha_p{
+        position: absolute;
+        left: 66.6%;
+        width: 300px;
+        }
+
+
+        #jo_pp{
+        position: absolute;
+        width: 33.3%;
+        top:70%;
+        left:-5%;
+              }
+              #ba_pp{
+        position: absolute;
+        left: 30%;
+        top:40%;
+        width: 33%;
+              }
+              #ha_pp{
+        position: absolute;
+        left: 65%;
+        top:40%;
+        width: 33%;
+              }
+
+
+              #jo_ppp{
+        position: absolute;
+        width: 33.3%;
+        top:70%;
+        left:-5%;
+              }
+              #ba_ppp{
+        position: absolute;
+        left: 35%;
+        top:70%;
+        width: 28%;
+              }
+              #ha_ppp{
+        position: absolute;
+        left: 65%;
+        top:70%;
+        width: 33%;
+              }
+
+            }
+
+
+            @media screen and (max-width: 300px){
+              img{
+         width: 300px;
+      }
             } 
 
  
 </style>
 <body>
-	<img src="joker.png" alt="joker" class="joker">
-	<img src="batman.png" alt="batman" class="batman">
-	<img src="har.png" alt="har" class="har">
+  <img src="joker.jpg" alt="joker" class="joker">
+  <img src="batman.png" alt="batman" class="batman">
+  <img src="hoby.png" alt="har" class="har">
+  
+  <div class="box1">
+    <div id="jo_p">
+      <p class="type">JOKER</p>
+    </div>
+    <div id="ba_p">
+      <p class="type">BATMAN</p>
+    </div>
+    <div id="ha_p">
+      <p class="type">HARVEY DENT</p>
+    </div>
+  </div>
+
+    
+  <div class="box2">  
+    <div id="jo_pp">
+    <p class="typee">"Why so serious?"</p>
+    </div>
+    <div id="ba_pp">
+      <p class="typee">"You either die a hero or you live long enough to see yourself become the villain"</p>
+    </div>
+    <div id="ha_pp">
+      <p class="typee">"if you can't kill me, i can't kill you"</p>
+    </div>
+  </div>
+
+  <div class="box3">   
+     <div id="jo_ppp">
+    <p class="typeee">"왜 그리 심각해..?"</p>
+    </div>
+    <div id="ba_ppp">
+      <p class="typeee">"영웅으로 살다가 죽거나, 아니면 오래 살아서 악당이되거나.."</p>
+    </div>
+    <div id="ha_ppp">
+      <p class="typeee">"니가 날 죽일수없다면 난 널 죽일수없어"</p>
+    </div>
+  </div>
+
 </body>
 </html>

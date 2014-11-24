@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-		<title>photo</title>
+		<title>test01</title>
 		<style type="text/css">
 			*{margin:0; padding:0;
 			   font-family: 'Bebas Neue';
@@ -12,27 +12,38 @@
       			background: black url(bb.png) repeat;}
 			li{list-style:none;}
 			ul{margin:auto; width:1500px; height:60px;}
-			ul>li{float:right; margin:0 3px;}
+			ul>li{float:right; margin:0px;border:3px solid white;}
 			div{	
-					position:relative;  
-					margin-top:200px; 
-					width:900px; height:880px; 
-					border:1px solid #000000;
-					margin-left: 200px;
+					position:absolute;  
+					width:40%; height:55%; 
+					border:5px solid white;
+					left:5%;
+					top:25%;
 			}
 			#title{
-				margin-left: 200px;
-				margin-top:100px; 
-				font-size: 6vw;
+				position: absolute;
+				top:10%;
+				left:5%;
+				font-size:6vw;
 			}
 			#photo{
-				margin-right: 100px;
-				float: right;
-				width: 700px;
+				position: absolute;
+				right:2.5%;
+				top:25%;
+				float: left;
+				width: 1000px;
+
 			}
 			#pho{width: 300px;
 			    height: 300px;}
 			div>p{position:absolute; right:0; top:0;}
+
+			 @media screen and (min-width:1830px) and (max-width:1903px){
+           #photo{
+           	top:70%;
+           }
+      }
+
 		</style>
 		
 	</head>
@@ -45,8 +56,6 @@
 			<li><img src="imgs/04.jpg" alt="썸네일4"  id="pho"/></li>
 			<li><img src="imgs/05.jpg" alt="썸네일5"  id="pho"/></li>
 			<li><img src="imgs/06.jpg" alt="썸네일6"  id="pho"/></li>
-			<li><img src="imgs/07.jpg" alt="썸네일7"  id="pho"/></li>
-			<li><img src="imgs/08.jpg" alt="썸네일8"  id="pho"/></li>
 		</ul>
 	<div id="picBox">
       <p id="btnClose"><img src="imgs/close.gif" alt="닫기" /></p>
