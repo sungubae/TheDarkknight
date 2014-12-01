@@ -1,8 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
  <title>Dark Night</title>
+ 
  <script type="text/javascript">
 
 
@@ -12,7 +13,6 @@ function paragraph_onmouseover(){
 function paragraph_onmouseout(){
   title2.style.color="white";
 }
-
 
 
  </script>
@@ -42,6 +42,19 @@ background-color: black;
                 max-width: 100%;}
               
             } 
+            @media screen {
+              p{
+                font-family: Bebas Neue, sans-serif;
+                font-size: 25px;
+              }
+            
+
+
+
+
+            }
+
+
 
 .opacity{
  width:auto;
@@ -50,7 +63,7 @@ background-color: black;
  min-height: 100%;
  left: 0px;
  top: 0px;
- opacity: 0.2;
+ opacity: 0.35;
 
 
  
@@ -66,10 +79,24 @@ background-color: black;
  border-bottom: 2px solid white;
 }
 
-#title2{
-	position: absolute;
- left:36%;
- top:60%;
+    
+#bat{
+ position: absolute;
+ left:23%;
+ top:24%;
+ bottom:0;
+ right:0;
+ min-width: 0%;
+ max-width: 100%;
+ width: 55%;
+ height: auto;
+
+     }
+
+   #title2{
+  position: absolute;
+ left:31%;
+ top:55%;
  bottom:0;
  right:0;
   min-width: 0%;
@@ -79,46 +106,76 @@ background-color: black;
  font-size: 7vw;
 
 }
-       
-#bat{
- position: absolute;
- left:28%;
- top:30%;
- bottom:0;
- right:0;
- min-width: 0%;
- max-width: 100%;
- width: 55%;
- height: auto;
-
-
-
-
-
-
-
-
-	 }
+   
 
 .footer{
  position: absolute;
  color:white;
  font-size: 2vw;
  font-family: Bebas Neue;
- left:15%;
+ left:24%;
  top:90%;
-
-
 }
+
 .foot{
  padding-right: 20px;
 }
+
 .foo{
  padding-right: 20px;
  width:5%;
  height: auto;
 
 }
+            
+            @media print {
+              
+
+          #title2{
+                font-family: Bebas Neue, sans-serif;
+                font-size: 97px;
+                color:white;
+                position: center;
+                left:25%;
+                top:50%;
+              }
+              .footer{
+                   position: absolute;
+                   color:white;
+                   font-size: 17px;
+                   font-family: Bebas Neue;
+                   left:18%;
+                   top:90%;
+                  }
+              p {
+                font-family: Bebas Neue, sans-serif;
+                color:white;
+                position: center;
+
+              }
+
+          
+           
+              #jok {width: auto;
+                height:auto;
+                }
+
+              #bat{
+               position: absolute;
+               left:23%;
+               top:28%;
+               bottom:0;
+               right:0;
+               min-width: 0%;
+               max-width: 100%;
+               width: 55%;
+               height: auto;
+
+                   }
+            }
+
+
+
 
 }
 </style>
@@ -131,30 +188,30 @@ background-color: black;
   <video id="video_background" preload="auto" autoplay="autoplay" loop="loop" muted="muted" > 
   <source src="thedarkknight.mp4" type="video/webm"> 
   </video>
+  <img class="jok" src="jok.jpg" alt="jok">
 
+    <div class="opacity">
+    </div>
+    
+    <div id="title">
+    <h1 id ="title2" onmouseover="paragraph_onmouseover()" onmouseout="paragraph_onmouseout()">THE DARK KNIGHT</h1>
+    </div>
+    
+    <div>
+    <a href="start.html"><img  id = "bat" src="dark_knight_logo_by_gamnamno-d6myhnn.png" alt="batt2"></a>
+    </div>
 
- 	<div class="opacity">
- 	</div>
- 	
- 	<div id="title">
- 	<h1 id ="title2" onmouseover="paragraph_onmouseover()" onmouseout="paragraph_onmouseout()">THE DARK KNIGHT</h1>
- 	</div>
- 	
- 	<div>
- 	<a href="start.html"><img  id = "bat" src="dark_knight_logo_by_gamnamno-d6myhnn.png" alt="batt2"></a>
- 	</div>
+    <div class="footer">
+    <p>
+    <span><img class="foo" src="dark_knight_logo_by_gamnamno-d6myhnn.png" alt="batt3"></span>
 
- 	<div class="footer">
- 	<p>
-	<span><img class="foo" src="dark_knight_logo_by_gamnamno-d6myhnn.png" alt="batt3"></span>
+    <span class="foot">Kang Ye Lim</span><span class="foot">The Dark Knight</span><span class="foot">2008.08.06</span><span class="foot">Christopher Johnathan James Nolan</span><span class="foot" >Bae Sung Woo</span>
+    
+    <span><img class="foo" src="dark_knight_logo_by_gamnamno-d6myhnn.png" alt="batt4"></span>
+    </p>
+    </div>
 
- 	<span class="foot">Kang Ye Lim</span><span class="foot">The Dark Knight</span><span class="foot">2008.08.06</span><span class="foot">Christopher Johnathan James Nolan</span><span class="foot" >Bae Sung Woo</span>
-	
-	<span><img class="foo" src="dark_knight_logo_by_gamnamno-d6myhnn.png" alt="batt4"></span>
- 	</p>
- 	</div>
-
-<img id="img1" style="position:absolute; left:0; top:0;" src="Batman_Logo.png">
+<!--img id="img1" style="position:absolute; left:0; top:0;" src="Batman_Logo.png">
 <script language="JavaScript">
 <!--
      // 마우스 커서 위치 담을 변수

@@ -3,6 +3,7 @@
 <head>
  <meta charset="utf-8">
  <title>plot</title>
+       
        <script type="text/javascript">
 
          function change()
@@ -24,8 +25,12 @@
        window.onload=function(){
            change();
        }
+       
       </script>
-<style>
+      
+
+      <style>
+
 
 body{
   color:white;
@@ -58,34 +63,63 @@ body{
   font-family: Bebas Neue;
   font-size: 6vw;
 }
-.plot,#america,#time{
+.plot{
   font-family:-윤고딕330; 
-  font-size: 20px;
+  font-size: 1.5vw;
 
 }
 .averageimg img{
  max-width: 100%;
-         height: auto;
+ height: auto;
          
 }
 .average{
   font-family:-윤고딕330; 
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 .plot{
   margin-top:70px;
   max-width: 1300px;
-  font-size: 2vw;
+  line-height: 2.5vw;
 }
 
-table{
-  size:;
-}
+
 
 th,td{
   padding: 10px;
 
+}
+
+@media print {
+#title{
+  font-family: Bebas Neue;
+  font-size: 50px;
+}
+.plot{
+  font-family:-윤고딕330; 
+  font-size: 15px;
+
+
+}
+.averageimg img{
+ max-width: 100%;
+ height: auto;
+         
+}
+
+.average{
+  font-family:-윤고딕330; 
+  font-size: 15px;
+}
+
+.plot{
+  margin-top:70px;
+  max-width: 1300px;
+  line-height: 30px;
+}
+
+  
 }
 
 
@@ -94,10 +128,6 @@ th,td{
 </head>
 <body>
   <div class="all">
-  
-
-  
-  
 
   <div id="title"><p>The dark knight(2008)</p></div>
   
